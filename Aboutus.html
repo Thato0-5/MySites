@@ -1,6 +1,6 @@
 <html>
     <head>
-<Title>GATEKEEP - About us</Title>
+<Title>GATEKEEP -Best affordable high fashion clothes</Title>
 
 <link rel="stylesheet" href="css/theme.css">
     </head>
@@ -26,6 +26,32 @@
            </Style>
             
      
+            <p id="time" style="color: whitesmoke; font-weight: bold; font-size: 20px;"></p>
+    
+            <script>
+            function displayTime() {
+                const now = new Date();
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                let seconds = now.getSeconds();
+    
+                // Add leading zeroes for single-digit minutes and seconds
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+                const currentTime = hours + ":" + minutes + ":" + seconds;
+                document.getElementById("time").textContent = currentTime;
+            }
+    
+            // Call the displayTime function every second to update the time
+            setInterval(displayTime, 1000);
+    
+            // Display the time immediately when the page loads
+            displayTime();
+            </script>
+         
+        </footer>
 
 
     </BODY>
